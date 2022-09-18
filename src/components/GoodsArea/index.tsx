@@ -39,7 +39,7 @@ function DoodsArea(props: IProps) {
     onOpen();
   };
   return (
-    <Flex direction={{ base: 'column', md: isEven ? 'row-reverse' : 'row' }} w="80%">
+    <Flex direction={{ base: 'column', md: isEven ? 'row-reverse' : 'row' }} w="80%" mt={50}>
       {/* goods image */}
       <Image
         className={isEven ? 'goods-list-img' : 'goods-list-img-reverse'}
