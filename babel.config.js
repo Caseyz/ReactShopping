@@ -1,16 +1,16 @@
-const isEnv = process.env.NODE_ENV === "development";
+const isEnv = process.env.NODE_ENV === 'development';
 
 module.exports = {
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
-        useBuiltIns: "usage",
-        corejs: 3,
-      },
+        useBuiltIns: 'usage',
+        corejs: 3
+      }
     ],
-    "@babel/preset-react",
-    "@babel/preset-typescript",
+    ['@babel/preset-react', { runtime: 'automatic' }],
+    '@babel/preset-typescript'
   ],
-  plugins: [isEnv && require.resolve("react-refresh/babel")].filter(Boolean),
+  plugins: [isEnv && require.resolve('react-refresh/babel')].filter(Boolean)
 };

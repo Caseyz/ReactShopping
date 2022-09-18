@@ -1,0 +1,13 @@
+// goods image
+.img_shape(@p: 650px, @r, @rx, @ry, @s, @tx, @bs) {
+  transform: perspective(@p) rotate(@r) rotateX(@rx) rotateY(@ry) scale(@s) translateX(@tx);
+  box-shadow: @bs;
+}
+
+// flex
+.flex(@direction: row, @justify_content: center, @align-items: center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify_content;
+  align-items: @align-items;
+}

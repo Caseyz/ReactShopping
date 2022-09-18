@@ -1,7 +1,7 @@
 {
   "name": "ReactShopping",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "repository": "git@github.com:Caseyz/ReactShopping.git",
   "author": "zhengkaixuan <zhengkaixuan233@163.com>",
   "license": "MIT",
@@ -22,8 +22,15 @@
     ]
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/react": "^2.3.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@types/react-router-dom": "^5.3.3",
+    "framer-motion": "^7.3.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
