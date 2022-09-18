@@ -29,13 +29,7 @@ function ShoppingCartItem(props: IProps) {
   const { dataSource, onAdd, onMinus, onDelete, isBigPage, bg, p, className } = props || {};
   const { id, imgSrc, name, price, quantity } = dataSource || {};
   return (
-    <Box
-      bg={bg ? bg : 'white'}
-      p={p ? p : 0}
-      className={className ? className : ''}
-      mt={5}
-      zIndex={-999}
-    >
+    <Box bg={bg ? bg : 'white'} p={p ? p : 0} className={className ? className : ''} mt={5}>
       <Flex direction="column" mt={10} mb={15}>
         {/* goods item */}
         <Flex justify="space-between" align="center">
