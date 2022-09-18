@@ -26,7 +26,7 @@ function Shopping() {
     navigate('/');
   };
   return (
-    <Flex direction="column" align="center" bg="#f1f2f4">
+    <Flex direction="column" align="center" bg="#f1f2f4" overflow="hidden">
       {/* title */}
       <Flex w="80%" justify="space-between" align="center">
         <Flex align="center" flex={1} h={100} cursor="pointer" onClick={goto}>

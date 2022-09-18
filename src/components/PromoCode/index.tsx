@@ -21,20 +21,34 @@ function PromoCode() {
     setInvalid(true);
   };
   return (
-    <Flex mt={10} flex={1}>
+    <Flex mt={2} flex={1}>
       {!isShowPromoCode ? (
-        <Button w="100%" bg="white" border="1px solid gray" onClick={togglePromoCode}>
+        <Button
+          w="100%"
+          bg="white"
+          border="1px solid gray"
+          onClick={togglePromoCode}
+          size={{ base: 'xs', md: 'md' }}
+        >
           promo code?
         </Button>
       ) : (
         <>
           <InputGroup>
-            <Input w="80%" placeholder="Promo code" onChange={handleChange} isInvalid={isInvalid} />
-            <InputRightAddon>
-              <Button onClick={verifyPromoCode}>Apply</Button>
-            </InputRightAddon>
+            <Input
+              w="80%"
+              placeholder="Promo code"
+              onChange={handleChange}
+              isInvalid={isInvalid}
+              size={{ base: 'xs', md: 'md' }}
+            />
+            <Button onClick={verifyPromoCode} size={{ base: 'xs', md: 'md' }}>
+              Apply
+            </Button>
           </InputGroup>
-          <Button onClick={togglePromoCode}>Cancel</Button>
+          <Button onClick={togglePromoCode} size={{ base: 'xs', md: 'md' }}>
+            Cancel
+          </Button>
         </>
       )}
     </Flex>

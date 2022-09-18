@@ -22,10 +22,12 @@ function ShoppingCartFooter(props: IProps) {
   return (
     <Flex direction="column" w="100%">
       <Flex justify="space-between">
-        <Text fontSize={25}>Total</Text>
-        <Text fontSize={25}>{total}</Text>
+        <Text fontSize={{ base: 15, md: 25 }}>Total:</Text>
+        <Text fontSize={{ base: 15, md: 25 }} ml={2}>
+          {total}
+        </Text>
       </Flex>
-      <Button colorScheme="blue" w="100%" mt={5} mb={5}>
+      <Button colorScheme="blue" w="100%" mt={2} mb={2} size={{ base: 'xs', md: 'md' }}>
         Checkout
       </Button>
       {!isBigPage && (
