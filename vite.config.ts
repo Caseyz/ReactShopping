@@ -6,11 +6,10 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   root: process.cwd(),
-  base: process.env.NODE_ENV === 'production' ? '/ReactShopping' : './',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/ReactShopping',
   build: {
     cssCodeSplit: true,
-    sourcemap: true,
-    outDir: "docs"
+    sourcemap: true
   },
   server: {
     proxy: {
