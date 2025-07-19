@@ -1,0 +1,109 @@
+.home-page {
+  position: relative;
+  padding-bottom: 80px;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 700;
+
+    > .title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+
+      .light-logo {
+        width: 28px;
+      }
+
+      .global-logo {
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .cart-box {
+        display: flex;
+        align-items: center;
+        color: #3B90F4;
+
+        .cart-logo {
+          width: 28px;
+        }
+      }
+    }
+  }
+
+  .product-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 100px;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      .cover {
+        transform: perspective(650px) rotate(-5deg) rotateX(2.5deg) rotateY(15deg) scale(.8) translateX(-30px);
+      }
+    }
+
+    .price-box {
+      .action-box {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+
+    .product-content {
+      .product-name {
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .description {
+        font-size: 20px;
+      }
+    }
+
+    .cover {
+      transform: perspective(650px) rotate(5deg) rotateX(-2.5deg) rotateY(-15deg) scale(.8) translateX(30px);
+      border-radius: 8px;
+      box-shadow: 30px 30px 50px rgb(0 0 0 / 10%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-page {
+    .product-box {
+      margin-top: 40px;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+
+      &:nth-child(odd) {
+        flex-direction: column-reverse;
+      }
+
+      .price-box {
+        .action-box {
+          > .chakra-button {
+            flex: 1;
+          }
+        }
+      }
+
+      .cover {
+        transform: perspective(650px) rotate(0) rotateX(-5deg) rotateY(5deg) scale(1) translateX(0);
+        width: 100%;
+      }
+    }
+  }
+}

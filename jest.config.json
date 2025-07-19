@@ -1,0 +1,16 @@
+{
+  "modulePaths": [
+    "src"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "transform": {
+    "^.+\\.svg$": "<rootDir>/src/test/__mocks__/svg.js"
+  },
+  "preset": "ts-jest",
+  "testEnvironment": "node"
+}
