@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
     cssCodeSplit: true,
     sourcemap: true,
+    outDir: "docs"
   },
   server: {
     proxy: {
